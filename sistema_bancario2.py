@@ -136,7 +136,7 @@ def criar_conta(cliente):
         
 
     if cliente_cadastrado is None:
-        print("usuario nao encontrado com sucesso")
+        print("usuario nao encontrado: ")
     else:            
 
         if cliente_cadastrado["cpf"] == cliente:
