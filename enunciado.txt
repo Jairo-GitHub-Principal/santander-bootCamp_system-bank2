@@ -1,0 +1,49 @@
+
+pegar o projeto sistema bancario e refatorar o programa, modularizando as ações do sitema bancario separando essas açõs de operações em  funções:
+
+separar as operaçção de:
+    depositar()
+    sacar()
+    estrato()
+em funções 
+    
+criar duas novas funções para :
+    criar usuario(cliente do banco)
+    criar conta corrente(e vincular um usuario a uma conta qu ser o processo de criar uma conta pro usuario)
+    
+       
+cada função vai ter uma regra na passagem de argumentos
+    ja o retorno e a forma como serão chamadas pode ser definidas da maneira que o dev achar melhor
+    
+    regras para a passagem de argumentos das funções:
+
+            saque: por nome "keyword" 
+
+saque(saldo=saldo,valor=valor)
+    retorno saldo,extrato
+
+            deposito: por posições  
+
+    depositar(valor, saldo)
+    return saldo, estrato
+
+            estrato: por posição e nome 
+
+    estrato(saldo/estrato = estrato)
+            return estrato
+
+
+        criar as duas novas funçẽos 
+        
+   o programa deve armazenar o usuario ou  clientes em uma listas, um usuario tem os seguites atributos:
+        nome, data de nascimento, cpf,endereço, use aqui uma estrutura de dicionario chave = valor, e add o dicionario de cada user na lista. obs: tudo string
+        endereço == string com formato:logradouro,n° , bairro - cidade/sigla estado, deve ser armazenado somente os numeros do cpf. obs: tudo string           
+        
+    cliente(nome,data_nasc,cpf,endereco)
+        return nome,data_nasc,cpf,endereco
+        
+   o programa deve armazenar a conta em uma listas, uma conta tem os seguintes atributos: agência, numero da conta e usuario,
+     o numero da conta é sequencial iniciado em 1
+     o numero da agencia é fixo: "0001" (constante) , um cliente pode ter varis contas, mais uma conta pertence apenas a 1 cliente
+    conta_corrente()
+    
